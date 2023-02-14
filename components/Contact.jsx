@@ -16,7 +16,7 @@ const Contact = () => {
                 <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='lg:p-4 h-full'>
                         <div>
-                            <img className='rounded-xl hover:scale-105 ease-in duration-300' src="https://www.mdoinsurance.com/wp-content/uploads/sites/4/2011/11/iStock-518700486.jpg" />
+                            {/* add an image here */}
                         </div>
                         <div>
                             <h2 className='py-2'>Cindy Amaya</h2>

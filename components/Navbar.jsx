@@ -6,8 +6,8 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
-    const [shadow, setShadow] = useState(false)
+    const [nav, setNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
 
     const handleNav = () => {
         setNav(!nav)
@@ -16,23 +16,25 @@ const Navbar = () => {
     useEffect(()=> {
         const handleShadow = () => {
             if (window.scrollY >= 90) {
-                setShadow(true)
+                setShadow(true);
             } else {
-                setShadow(false)
+                setShadow(false);
             }
-        }
+        };
         window.addEventListener('scroll', handleShadow);
     }, [])
 
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 shadow-xl z-[100]'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+            <Link href='/'>
             <Image 
             src="/../public/assets/CAS.png" 
             alt="/" 
             width='160' 
             height='50'
             />
+            </Link>
             <div>
                 <ul className='hidden md:flex'>
                     <Link href='/'>
@@ -110,5 +112,4 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar
