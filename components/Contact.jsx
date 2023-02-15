@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineMail} from 'react-icons/ai'
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
+import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 import Link from 'next/link'
@@ -25,18 +25,26 @@ const Contact = () => {
                     <div>
                         <p className='uppercase pt-6'>Connect With Me</p>
                         <div className='flex items-center justify-between py-4'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <FaLinkedinIn />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <FaGithub />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <AiOutlineMail />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <BsFillPersonLinesFill />
-                            </div>
+                    <Link href='https://www.linkedin.com/in/cindyamayaswe/'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <FaLinkedin />
+                        </div>
+                    </Link>
+                    <Link href='https://github.com/camaya21'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <FaGithub />
+                        </div>
+                    </Link>
+                    <Link href='mailto:cindymamaya21@gmail.com'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <AiOutlineMail />
+                        </div>
+                    </Link>
+                    <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                            <BsFillPersonLinesFill />
+                        </div>
+                    </Link>
                         </div>
                     </div>
                     </div>

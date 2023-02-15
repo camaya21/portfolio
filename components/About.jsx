@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import ProfilePic from '../public/assets/ProfilePic.jpg'
 
 const About = () => {
   return (
@@ -13,9 +14,9 @@ const About = () => {
                 <p className='py-2 text-gray-600'>I am a graduate from GA Software Engineering Immersive Boot Camp, a dog mom, a baker in my free time, and wannabe singer in my solitude.</p>
                 {/* Come Back and add Resume and fix your profile pic */}
             </div>
-            {/* <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
-                <Image src='/../public/assets/about.jpg' alt='/' width='500' height='35' />
-            </div> */}
+            <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+                <Image src={ProfilePic} alt='/' width='500' height='35' />
+            </div>
         </div>
     </div>
   )
