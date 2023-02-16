@@ -33,7 +33,6 @@ function Main() {
                             <BsFillPersonLinesFill />
                         </div>
                     </Link>
-                    
                 </div>
             </div>
         </div>
