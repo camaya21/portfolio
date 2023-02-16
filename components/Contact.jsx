@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from "@emailjs/browser"
 import {AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 import Link from 'next/link'
 
-const Contact = () => {
-  return (
+export const ContactUs = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm("service_luzk2ir", "template_wq1ndbq", form.current, "NHCj1CDJyAZKb9NHs")
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+    return (
     <div id='contact' className='w-fu; lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
@@ -52,22 +66,22 @@ const Contact = () => {
                 {/* right */}
                 <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
                     <div className='p-4'>
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-sm py-2'>Name</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" />
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name="user_name"/>
                                 </div>
                             </div>
                             <div className='flex flex-col py-2'>
                                 <label className='uppercase text-sm py-2'>Email</label>
-                                <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" />
+                                <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" name="user_email"/>
                             </div>
                             <div className='flex flex-col py-2'>
                                 <label className='uppercase text-sm py-2'>Message</label>
-                                <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10'></textarea>
+                                <textarea className='border-2 rounded-lg p-3 border-gray-300' rows='10' name="message" />
                             </div>
-                            <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
+                            <input className='border-2 rounded-lg p-3 flex border-gray-300' type="submit" value="Send" />
                         </form>
                     </div>
                 </div>
@@ -84,4 +98,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactUs
