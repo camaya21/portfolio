@@ -5,6 +5,8 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 import Link from 'next/link'
+import Image from 'next/image'
+import ContactPic from '../public/assets/ContactPic.jpg'
 
 export const ContactUs = () => {
     const form = useRef();
@@ -30,11 +32,11 @@ export const ContactUs = () => {
             <h2 className='py-4'>Get In Touch</h2>
             <div className='grid lg:grid-cols-5 gap-8'>
                 {/* left */}
-                <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+                <div className='col-span-3 lg:col-span-2 w-full h-2/5 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='lg:p-4 h-full'>
-                        <div>
-                            {/* add an image here */}
-                        </div>
+                        {/* <div>
+                            <Image src={ContactPic} width='64' height='64'/>
+                        </div> */}
                         <div>
                             <h2 className='py-2'>Cindy Amaya</h2>
                             <p>Full-Stack Developer</p>
