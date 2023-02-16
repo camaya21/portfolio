@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser"
 import {AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
@@ -12,12 +12,15 @@ export const ContactUs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_luzk2ir", "template_wq1ndbq", form.current, "NHCj1CDJyAZKb9NHs")
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        if (e.target[0].value && e.target[1].value && e.target[2].value) {
+            emailjs.sendForm("service_luzk2ir", "template_wq1ndbq", form.current, "NHCj1CDJyAZKb9NHs")
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+            e.target.reset()
+        }
     };
 
     return (
@@ -70,12 +73,12 @@ export const ContactUs = () => {
                             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                 <div className='flex flex-col'>
                                     <label className='uppercase text-sm py-2'>Name</label>
-                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name="user_name"/>
+                                    <input className='border-2 rounded-lg p-3 flex border-gray-300' type="text" name="user_name" />
                                 </div>
                             </div>
                             <div className='flex flex-col py-2'>
                                 <label className='uppercase text-sm py-2'>Email</label>
-                                <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" name="user_email"/>
+                                <input className='border-2 rounded-lg p-3 flex border-gray-300' type="email" name="user_email" />
                             </div>
                             <div className='flex flex-col py-2'>
                                 <label className='uppercase text-sm py-2'>Message</label>
