@@ -16,19 +16,19 @@ const Projects = () => {
                 <ProjectItem 
                 title='Expense Tracker' 
                 backgroundImg={expenseTrackerImg}
-                build='Django' 
+                build="A Django app for keeping track of expenses from monthly budgets" 
                 projectLive='https://e-tracker.herokuapp.com/' 
                 projectGit='https://github.com/camaya21/project_4' />
                 <ProjectItem 
                 title='#Trending' 
                 backgroundImg={trending} 
-                build='Full Stack MERN App'
+                build="Full-Stack MERN app for people of all ages to keep up with today's trends"
                 projectLive='https://cool-licorice-e1c33b.netlify.app/' 
                 projectGit='https://github.com/bavila19/trending-frontend' />
                 <ProjectItem 
                 title='Feeling Down' 
                 backgroundImg={feelingDown}
-                build='React JS' 
+                build="React app that uses compliments and dog pictures to help anyone who is feeling down"
                 projectLive='https://celadon-cocada-1724db.netlify.app ' 
                 projectGit='https://github.com/bavila19/project-two' />
             </div>
