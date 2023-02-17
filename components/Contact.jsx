@@ -39,6 +39,7 @@ export const ContactUs = () => {
                         </div> */}
                         <div>
                             <h2 className='py-2'>Cindy Amaya</h2>
+                            <p className='text-lg py-2'>Email: <Link href='mailto:cindymamaya21@gmail.com'>cindymamaya21@gmail.com</Link></p>
                             <p className='text-lg py-2'>Full-Stack Developer</p>
                         </div>
                         <div>
