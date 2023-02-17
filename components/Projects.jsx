@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
-            <p className='text-x; tracking-widest uppercase text-[#5651e5]'>Projects</p>
+        <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
             <h2 className='py-4'>What I've Built</h2>
             <div className='grid md:grid-cols-2 gap-8'>
                 <ProjectItem 
@@ -28,7 +28,7 @@ const Projects = () => {
                 <ProjectItem 
                 title='Feeling Down' 
                 backgroundImg={feelingDown}
-                build="React app that uses compliments and dog pictures to help anyone who is feeling down"
+                build="React app that sources 2 API's to help anyone who is feeling down"
                 projectLive='https://celadon-cocada-1724db.netlify.app ' 
                 projectGit='https://github.com/bavila19/project-two' />
             </div>

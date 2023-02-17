@@ -32,40 +32,40 @@ export const ContactUs = () => {
             <h2 className='py-4'>Get In Touch</h2>
             <div className='grid lg:grid-cols-5 gap-8'>
                 {/* left */}
-                <div className='col-span-3 lg:col-span-2 w-full h-2/5 shadow-xl shadow-gray-400 rounded-xl p-4'>
+                <div className='col-span-3 lg:col-span-2 w-full h-30 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='lg:p-4 h-full'>
                         {/* <div>
                             <Image src={ContactPic} width='64' height='64'/>
                         </div> */}
                         <div>
                             <h2 className='py-2'>Cindy Amaya</h2>
-                            <p>Full-Stack Developer</p>
+                            <p className='text-lg py-2'>Full-Stack Developer</p>
                         </div>
-                    <div>
-                        <p className='uppercase pt-6'>Connect With Me</p>
-                        <div className='flex items-center justify-between py-4'>
-                    <Link href='https://www.linkedin.com/in/cindyamayaswe/'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaLinkedin />
+                        <div>
+                            <p className='uppercase py-2'>Connect With Me</p>
+                            <div className='flex items-center justify-between py-4'>
+                                <Link href='https://www.linkedin.com/in/cindyamayaswe/'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                        <FaLinkedin />
+                                    </div>
+                                </Link>
+                                <Link href='https://github.com/camaya21'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                        <FaGithub />
+                                    </div>
+                                </Link>
+                                <Link href='mailto:cindymamaya21@gmail.com'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                        <AiOutlineMail />
+                                    </div>
+                                </Link>
+                                <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                        <BsFillPersonLinesFill />
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-                    </Link>
-                    <Link href='https://github.com/camaya21'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <FaGithub />
-                        </div>
-                    </Link>
-                    <Link href='mailto:cindymamaya21@gmail.com'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <AiOutlineMail />
-                        </div>
-                    </Link>
-                    <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                            <BsFillPersonLinesFill />
-                        </div>
-                    </Link>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 {/* right */}
