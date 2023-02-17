@@ -32,7 +32,7 @@ export const ContactUs = () => {
             <h2 className='py-4'>Get In Touch</h2>
             <div className='grid lg:grid-cols-5 gap-8'>
                 {/* left */}
-                <div className='col-span-3 lg:col-span-2 w-full h-30 shadow-xl shadow-gray-400 rounded-xl p-4'>
+                <div className='col-span-3 lg:col-span-2 w-full sm:h-30 lg:h-3/6 shadow-xl shadow-gray-400 rounded-xl p-4'>
                     <div className='lg:p-4 h-full'>
                         {/* <div>
                             <Image src={ContactPic} width='64' height='64'/>
