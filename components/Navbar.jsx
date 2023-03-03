@@ -108,7 +108,7 @@ const Navbar = () => {
                                     <AiOutlineMail />
                                 </div>
                             </Link>
-                            <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing' target='_blank'>
+                            <Link href='https://docs.google.com/document/d/1e82JLykIIkQ0YoqBquWLN1C6DZjU0-ekReQCKt5AHrk/edit?usp=sharing' target='_blank'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <BsFillPersonLinesFill />
                                 </div>
