@@ -98,19 +98,19 @@ const Navbar = () => {
                                     <FaLinkedinIn />
                                 </div>
                             </Link>
-                            <Link href='https://github.com/camaya21'>
+                            <Link href='https://github.com/camaya21' target='_blank'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub target='_blank' />
+                                    <FaGithub />
                                 </div>
                             </Link>
-                            <Link href='mailto:cindymamaya21@gmail.com'>
+                            <Link href='mailto:cindymamaya21@gmail.com' target='_blank'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineMail target='_blank' />
+                                    <AiOutlineMail />
                                 </div>
                             </Link>
-                            <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing'>
+                            <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing' target='_blank'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <BsFillPersonLinesFill target='_blank' />
+                                    <BsFillPersonLinesFill />
                                 </div>
                             </Link>
                         </div>
