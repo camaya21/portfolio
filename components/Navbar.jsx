@@ -93,18 +93,26 @@ const Navbar = () => {
                     <div className='pt-10'>
                         <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
                         <div className='flex intems-center justify-between my-4 w-full sm:w-[80%]'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <FaLinkedinIn />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <FaGithub />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <AiOutlineMail />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                <BsFillPersonLinesFill />
-                            </div>
+                            <Link href='https://www.linkedin.com/in/cindyamayaswe/' target='_blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaLinkedinIn />
+                                </div>
+                            </Link>
+                            <Link href='https://github.com/camaya21'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <FaGithub target='_blank' />
+                                </div>
+                            </Link>
+                            <Link href='mailto:cindymamaya21@gmail.com'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <AiOutlineMail target='_blank' />
+                                </div>
+                            </Link>
+                            <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                                    <BsFillPersonLinesFill target='_blank' />
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

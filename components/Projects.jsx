@@ -18,6 +18,7 @@ const Projects = () => {
                 backgroundImg={expenseTrackerImg}
                 build="A Django app for keeping track of expenses from monthly budgets" 
                 projectLive='https://e-tracker.herokuapp.com/' 
+                target="_blank"
                 projectGit='https://github.com/camaya21/project_4' />
                 <ProjectItem 
                 title='#Trending' 

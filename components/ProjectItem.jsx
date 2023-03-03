@@ -10,10 +10,10 @@ const ProjectItem = ({title, backgroundImg, build, projectLive, projectGit}) => 
             <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
             <p className='p-2 text-white text-center lg:p-7 lg:text-xl'>{build}</p>
             <div className='flex flex-row items-center justify-center space-x-2.5'>
-               <Link href={projectLive}>
+               <Link href={projectLive} target='_blank'>
                     <p className='my-2 mtext-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer p-8'>LIVE</p>
                 </Link>
-                <Link href={projectGit}>
+                <Link href={projectGit} target='_blank'>
                     <p className='my-2 text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer p-8'>CODE</p>
                 </Link> 
             </div>
