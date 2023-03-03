@@ -13,22 +13,22 @@ function Main() {
                 <h1 className='py-4 text-gray-700'>Hello, I'm <span className='text-[#5651e5]'>Cindy</span></h1>
                 <h1 className='py-2 text-gray-700'>A Full-Stack Web Developer</h1>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                    <Link href='https://www.linkedin.com/in/cindyamayaswe/'>
+                    <Link href='https://www.linkedin.com/in/cindyamayaswe/' target='_blank'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <FaLinkedin />
                         </div>
                     </Link>
-                    <Link href='https://github.com/camaya21'>
+                    <Link href='https://github.com/camaya21' target='_blank'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <FaGithub />
                         </div>
                     </Link>
-                    <Link href='mailto:cindymamaya21@gmail.com'>
+                    <Link href='mailto:cindymamaya21@gmail.com' target='_blank'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <AiOutlineMail />
                         </div>
                     </Link>
-                    <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing'>
+                    <Link href='https://docs.google.com/document/d/1HpAuh0LGfk2RoB5BDxwVdYLUWCTintulUmcrkGfdNkM/edit?usp=sharing' target='_blank'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <BsFillPersonLinesFill />
                         </div>
