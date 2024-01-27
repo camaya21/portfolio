@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import expenseTrackerImg from '../public/assets/ExpenseTracker.jpg'
+import top from '../public/assets/top.png'
 import trending from '../public/assets/trending.jpg'
 import feelingDown from '../public/assets/FeelingDown.jpg'
 import ProjectItem from './ProjectItem'
@@ -14,8 +14,8 @@ const Projects = () => {
             <h2 className='py-4'>What I've Built</h2>
             <div className='grid md:grid-cols-2 gap-8'>
                 <ProjectItem 
-                title='Expense Tracker' 
-                backgroundImg={expenseTrackerImg}
+                title='Make My Test Count.org' 
+                backgroundImg={top}
                 build="A Django app for keeping track of expenses from monthly budgets" 
                 projectLive='https://e-tracker.herokuapp.com/' 
                 target="_blank"
