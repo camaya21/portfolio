@@ -17,7 +17,7 @@ const Projects = () => {
                 title='Make My Test Count.org' 
                 backgroundImg={top}
                 build="A Django app for keeping track of expenses from monthly budgets" 
-                projectLive='https://e-tracker.herokuapp.com/' 
+                projectLive='https://top-project.vercel.app/' 
                 target="_blank"
                 projectGit='https://github.com/camaya21/project_4' />
                 <ProjectItem 
