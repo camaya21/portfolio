@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import top from '../public/assets/top.png'
+import topProject from '../public/assets/top.png'
 import trending from '../public/assets/trending.jpg'
 import feelingDown from '../public/assets/FeelingDown.jpg'
 import ProjectItem from './ProjectItem'
@@ -15,7 +15,7 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 gap-8'>
                 <ProjectItem 
                 title='Make My Test Count' 
-                backgroundImg={top}
+                backgroundImg={topProject}
                 build="A Next.js app that consumers can use to input their covid test results" 
                 projectLive='https://top-project.vercel.app/' 
                 target="_blank"
