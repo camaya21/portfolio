@@ -14,12 +14,12 @@ const Projects = () => {
             <h2 className='py-4'>What I've Built</h2>
             <div className='grid md:grid-cols-2 gap-8'>
                 <ProjectItem 
-                title='Make My Test Count.org' 
+                title='Make My Test Count' 
                 backgroundImg={top}
-                build="A Django app for keeping track of expenses from monthly budgets" 
+                build="A Next.js app that consumers can use to input their covid test results" 
                 projectLive='https://top-project.vercel.app/' 
                 target="_blank"
-                projectGit='https://github.com/camaya21/project_4' />
+                projectGit='https://github.com/EmilyJarecki/TOP-Project' />
                 <ProjectItem 
                 title='#Trending' 
                 backgroundImg={trending} 

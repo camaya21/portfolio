@@ -15,7 +15,7 @@ const ProjectItem = ({title, backgroundImg, build, projectLive, projectGit}) => 
                 </Link>
                 <Link href={projectGit} target='_blank'>
                     <p className='my-2 text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer p-8'>CODE</p>
-                </Link> 
+                </Link>
             </div>
             
         </div>
