@@ -11,8 +11,8 @@ function Main() {
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>LET'S BUILD SOMETHING TOGETHER</p>
                 <h1 className='py-4 text-gray-700'>Hello, I'm <span className='text-[#5651e5]'>Cindy</span></h1>
-                <h1 className='py-2 text-gray-700'>A Software Engineer</h1>
-                <h1 className='py-2 text-gray-700'>  At Northern Virginia Community College</h1>
+                <h1 className='py-2 text-gray-700'>A Computer Science student </h1>
+                <h1 className='py-2 text-gray-700'>  @ George Mason University</h1>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                     <Link href='https://www.linkedin.com/in/cindyamayaswe/' target='_blank'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>

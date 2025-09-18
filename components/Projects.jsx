@@ -21,12 +21,6 @@ const Projects = () => {
                 target="_blank"
                 projectGit='https://github.com/EmilyJarecki/TOP-Project' />
                 <ProjectItem 
-                title='#Trending' 
-                backgroundImg={trending} 
-                build="Full-Stack MERN app for people of all ages to keep up with today's trends"
-                projectLive='https://cool-licorice-e1c33b.netlify.app/' 
-                projectGit='https://github.com/bavila19/trending-frontend' />
-                <ProjectItem 
                 title='Feeling Down' 
                 backgroundImg={feelingDown}
                 build="React app that sources 2 API's to help anyone who is feeling down"
